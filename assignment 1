@@ -1,0 +1,26 @@
+#bill for supermarket
+dal=100
+salt=20
+chilli=30
+rice=1000
+masala=50
+cpho=int(input('enter customer phn no='))
+cname=int(input('enter customer name='))
+address=int(input('enter address='))
+bill=(dal*2)+(salt*2)+(chilli*3)+(rice*3)+(masala*2)
+if bill>3000:
+      tax=bill*5/100
+elif bill>2000:
+      tax=bill*7/100
+elif bill>1000:
+      tax=bill*10/100
+elif bill>500:
+      tax=bill*15/100
+else:
+    tax=100
+    tax=tax+bill
+         print('cphn='cphn)
+         print('cname='cname)
+         print('address=',address)
+         print('bill=',bill)
+         print('tax=',tax)
